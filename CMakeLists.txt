@@ -207,9 +207,9 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/llama.pc"
 # utils, programs, examples and tests
 #
 
-if (LLAMA_BUILD_COMMON)
-    add_subdirectory(common)
-endif()
+# if (LLAMA_BUILD_COMMON)
+add_subdirectory(common)
+# endif()
 
 if (LLAMA_BUILD_COMMON AND LLAMA_BUILD_TESTS AND NOT CMAKE_JS_VERSION)
     include(CTest)
